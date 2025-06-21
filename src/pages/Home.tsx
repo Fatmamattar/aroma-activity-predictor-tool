@@ -6,7 +6,12 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-50">
+    <div 
+      className="min-h-screen bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('https://i.postimg.cc/qgfpzrmm/projectimage.jpg')"
+      }}
+    >
       {/* Navigation */}
       <nav className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -29,11 +34,11 @@ const Home = () => {
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-5xl font-bold text-white mb-6 text-shadow-lg">
             Essential Oil's Biological Activity
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600"> Predictor</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400"> Predictor</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+          <p className="text-xl text-white max-w-3xl mx-auto mb-8 text-shadow">
             Advanced machine learning tool powered by CatBoost and Random Forest algorithms to predict biological activities of essential oils based on their chemical composition and properties.
           </p>
           <Link to="/predictor">
@@ -46,7 +51,7 @@ const Home = () => {
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <Card className="border-0 shadow-lg bg-white/60 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
+          <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
             <CardHeader>
               <CardTitle className="text-green-600">🧬 Advanced ML Models</CardTitle>
               <CardDescription>
@@ -63,7 +68,7 @@ const Home = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-0 shadow-lg bg-white/60 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
+          <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
             <CardHeader>
               <CardTitle className="text-blue-600">⚗️ Chemical Analysis</CardTitle>
               <CardDescription>
@@ -80,7 +85,7 @@ const Home = () => {
             </CardContent>
           </Card>
 
-          <Card className="border-0 shadow-lg bg-white/60 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
+          <Card className="border-0 shadow-lg bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300">
             <CardHeader>
               <CardTitle className="text-purple-600">📊 Accurate Predictions</CardTitle>
               <CardDescription>
@@ -99,7 +104,7 @@ const Home = () => {
         </div>
 
         {/* How It Works Section */}
-        <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+        <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">How It Works</h2>
           <div className="grid md:grid-cols-4 gap-6">
             <div className="text-center">
