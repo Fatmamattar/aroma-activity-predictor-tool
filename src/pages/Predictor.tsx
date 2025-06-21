@@ -13,17 +13,18 @@ const Predictor = () => {
   const [inputValues, setInputValues] = useState<number[]>(new Array(10).fill(0));
   const [isLoading, setIsLoading] = useState(false);
 
+  // Use the top 10 features for input (matching your original Colab code)
   const inputLabels = [
-    "Chemical Parameter 1",
-    "Chemical Parameter 2", 
-    "Chemical Parameter 3",
-    "Chemical Parameter 4",
-    "Chemical Parameter 5",
-    "Chemical Parameter 6",
-    "Chemical Parameter 7",
-    "Chemical Parameter 8",
-    "Chemical Parameter 9",
-    "Chemical Parameter 10"
+    "α-Pinene",
+    "Camphene", 
+    "β-Pinene",
+    "Myrcene",
+    "α-Phellandrene",
+    "α-Terpinene",
+    "Limonene",
+    "β-Phellandrene",
+    "γ-Terpinene",
+    "α-Terpinolene"
   ];
 
   const handleSliderChange = (index: number, value: number[]) => {
